@@ -8,12 +8,22 @@ export const InlineStyle = () => {
     justifyContent: "space-around",
     alignItems: "center"
   };
-  const titleStyle = {};
-  const buttonStyle = {};
+  const titleStyle = {
+    fontWeight: "bold",
+    margine: "0",
+    color: "#3d84a8"
+  };
+  const buttonStyle = {
+    backgroundColor: "#0000ff",
+    color: "white",
+    border: "none",
+    padding: "8px",
+    borderRadius: "8px"
+  };
   return (
     <div style={containerStyle}>
-      <p>-inline style-</p>
-      <button>Fight!!</button>
+      <p style={titleStyle}>-inline style-</p>
+      <button style={buttonStyle}>Fight!!</button>
     </div>
   );
 };
